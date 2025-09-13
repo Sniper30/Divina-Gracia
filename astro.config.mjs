@@ -16,4 +16,8 @@ export default defineConfig({
     adapter: node({
     mode: "standalone" // o "middleware" si quieres integrarlo con Express/Fastify
   }),
+    server: {
+    host: '0.0.0.0',
+    port: 8080,
+  },
 });
