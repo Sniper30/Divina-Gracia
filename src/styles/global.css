@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-secondary: #4a5565;
+    --color-primary: #f8bc69;
+    --color-blacked: hsl(224deg 71.43% 4.12%);
+    --color-items-menu: #cab795;
+    --animate-show-up: show-up-text ease .2s;
+
+    --breakpoint-phone: 1rem;
+    --breakpoint-tablet: 40rem;
+    --breakpoint-laptop-sm: 60rem;
+    --breakpoint-laptop-lg: 90rem;
+    /* --breakpoint-phone-lg:30rem;
+    --breakpoint-desktop: 70rem; */
+
+    --items-grid-cols-phone: minmax(300px, 300px);
+    --items-grid-cols-tablet: repeat(2, 300px);
+    --items-grid-cols-laptop-sm: repeat(3, 300px);
+    --items-grid-cols-laptop-lg: repeat(4, 300px);
+
+    @keyframes show-up-text {
+        0% {
+            transform: translate(0, 50px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+    }
+}
+
+/* montserrat-latin-wght-normal */
+@font-face {
+    font-family: 'Montserrat Variable';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100 900;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/montserrat:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+body,
+html {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat Variable', serif;
+    overflow-x: hidden;
+    /* font-size: calc(16px + 6 * ((100vw - 320px) / 680)); */
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}

@@ -1,0 +1,23 @@
+---
+
+import { getCollection } from "astro:content";
+import Modal from "../modal/Modal.component";
+import Items from "./items.component";
+import NavMenu from "./NavMenu.component.astro";
+import {type images} from './items.component'
+import type { late } from "astro:schema";
+
+interface propsItems {
+    data: images
+}
+
+const _images = await getCollection("images") as unknown as [{data: [images]}];
+
+---
+
+
+
+    <div class="w-full laptop-sm:max-w-[1300px] flex flex-col items-center">
+       <slot/>
+        <Items items={_images[0].data} client:load />
+    </div>
