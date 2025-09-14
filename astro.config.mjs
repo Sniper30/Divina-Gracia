@@ -7,17 +7,10 @@ import react from '@astrojs/react';
 import node from "@astrojs/node"
 // https://astro.build/config
 export default defineConfig({
-  // output:'server',
   vite: {
     plugins: [tailwindcss()]
   },
 
   integrations: [react()],
-  //   adapter: node({
-  //   mode: "standalone" // o "middleware" si quieres integrarlo con Express/Fastify
-  // }),
-  //   server: {
-  //   host: '0.0.0.0',
-  //   port: 8080,
-  // },
+
 });
