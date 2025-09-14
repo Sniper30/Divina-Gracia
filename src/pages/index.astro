@@ -9,17 +9,17 @@ import Footer from "../components/Footer.component.astro";
 import {WhatsappIcon} from "../components/icons.components"
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
-export const prerender = false;
+
 ---
 
 <Layout>
-	<main class="flex flex-col items-center w-full h-full relative">
+	<main class="flex flex-col items-center w-full h-full relative px-14">
+		<div class=" w-[45px] h-[45px] rounded-full fixed bottom-5 right-2"><a href="#whatsapp"><WhatsappIcon /></a> </div>
 		<Hero/>
 		<Menu>
 			<NavMenu/>
 		</Menu>
-		<div class=" w-[45px] h-[45px] rounded-full fixed bottom-5 right-5"><a href="#whatsapp"><WhatsappIcon /></a> </div>
+		<VideoThumb />
 	</main>
-	<VideoThumb />
 	<Footer />
 </Layout>

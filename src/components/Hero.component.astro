@@ -2,26 +2,26 @@
 import TopNav from "./TopNav.component.astro";
 ---
 
-<div class="flex flex-col items-center max-w-[1200px] w-full h-lvh relative overflow-hidden ">
-    <TopNav />
-    <div class="w-fit p-0 relative">
-        <p class="text-center">WELCOME TO</p>
-        <h1
-            class=" phone:text-4xl tablet:text-6xl laptop-sm:text-8xl w-fit font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blacked to-secondary animate-show-up"
-        >
-            DIVINA GRACIA
-        </h1>
-    </div>
-    <p class="tracking-widest mt-[50px]">Bakery and Burgers</p>
-    <p
-        class="max-w-[420px] mt-10 text-center leading-7 tracking-widest text-secondary"
-    >
-        From freshly baked breads and pastries to juicy, creative burgers made
-        with quality ingredients — all crafted with care and delivered right to
-        you.
-    </p>
-    <a href="#menu" class="bg-primary rounded-full p-3 w-[110px] mt-20 shadow-sm"
-        >Our Menu</a
-    >
 
-</div>
+<header class="w-full h-svh  relative mb-10">
+    <img class="w-[50%] absolute bottom-[-25%] z-0" src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/burger2.png" >
+    <nav class="w-full h-34 grid items-center">
+         <img src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/DivinaGracia(Beige).png" class="w-24 h-24" />
+    </nav>
+    <div class="flex">
+        <div class="relative">
+            <p class="hero text-[#204035]">Burgers</p>
+            <p class="text-5xl mb-10 text-[#204035] z-10">Where every bite <br> brings us together</p>
+            <div class="flex gap-5 z-10">
+                <button class="bg-[#b4945a] rounded-lg w-fit h-fit p-3 shadow-lg text-[#204035]">See our menu</button>
+                <button class="text-[#ede6ce] rounded-lg w-fit h-fit p-3 shadow-lg bg-[#204035]">Get in touch</button>
+            </div>
+        </div>
+
+        <div class="w-full h-fit relative">
+            <img class="w-[90%]" src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/burger1.png" >
+            <p class="absolute bottom-12 text-[#204035]">From freshly baked breads and pastries to juicy, creative burgers made <br> with  quality ingredients — all crafted with care and delivered right to you.</p>
+        </div>
+    </div>
+</header>
+

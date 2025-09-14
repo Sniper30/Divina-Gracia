@@ -17,7 +17,7 @@ const _images = await getCollection("images") as unknown as [{data: [images]}];
 
 
 
-    <div class="w-full laptop-sm:max-w-[1300px] flex flex-col items-center">
+    <div class="w-full flex flex-col items-center z-10 ">
        <slot/>
         <Items items={_images[0].data} client:load />
     </div>

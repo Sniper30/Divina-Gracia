@@ -1,19 +1,7 @@
----
-import {actions} from 'astro:actions'
-
-const result = Astro.getActionResult(actions.WhatsappAction);
-
----
-
 
 <footer class="bg-[#f1d29a] w-full h-fit flex flex-col items-center gap-30 pt-7">
     <div class="flex flex-col items-center gap-3 phone:w-5/6 tablet:w-4/6  laptop-sm:w-2/6">
-        <p class="font-black text-3xl text-[#204035]">Check out our menu</p>
-        <p class="font-bold">Contact us through whatsapp</p>
-        <form class="flex w-full" method="POST" action={actions.WhatsappAction} id="whatsapp">
-            <input type="text" name="phone" placeholder="Phone Number" class="w-5/6 h-[50px] border-2 border-[#204035] focus:outline-0 pl-1" />
-            <button type="submit" class="w-1/6 h-[50px] text-white bg-[#204035]">Send</button>
-        </form>
+       
     </div>
     <div class="grid max-[1005px]:grid-cols-[100%] grid-cols-[repeat(2,500px)] grid-rows-1 place-content-center  w-full ">
         <div class="flex items-start justify-center gap-12 w-full h-[300px] border-r-[1px] border-blacked/30">

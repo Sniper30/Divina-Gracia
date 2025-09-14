@@ -17,7 +17,7 @@ export interface images {
 const Items = ({ items }: { items: [images] }) => {
     const { child, setChild, positionModal } = useModal(null)
 
-    return <ul className="grid place-content-center phone:grid-cols-(--items-grid-cols-phone) tablet:grid-cols-(--items-grid-cols-tablet) laptop-sm:grid-cols-(--items-grid-cols-laptop-sm) laptop-lg:grid-cols-(--items-grid-cols-laptop-lg) phone:w-full h-fit gap-5  ">
+    return <ul className="grid phone:grid-cols-(--items-grid-cols-phone) tablet:grid-cols-(--items-grid-cols-tablet) laptop-sm:grid-cols-(--items-grid-cols-laptop-sm) laptop-lg:grid-cols-(--items-grid-cols-laptop-lg) phone:w-full h-fit justify-between gap-14 ">
         {
             child ?
                 <Modal toggle={child ? true : false} setChildren={setChild} setPosition={positionModal}>
@@ -30,7 +30,7 @@ const Items = ({ items }: { items: [images] }) => {
             items.map(item => (
                 <li
                     key={item.id}
-                    className="m-w-[300px] h-[300px] overflow-hidden rounded-xl shadow-md "
+                    className="w-full h-fit overflow-hidden rounded-xl shadow-md "
                     onClick={(e) => setChild(_Modal({ title: item.title, source: item.source, description: item.description }))}
                 >
                     <img
