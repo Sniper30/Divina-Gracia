@@ -61,6 +61,6 @@ p.hero {
 header p {
     font-family: "Playfair Display", serif;
 }
-p,li {
+p,li,a,button {
     font-family: "Montserrat", sans-serif;
 }
