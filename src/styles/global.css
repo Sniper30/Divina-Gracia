@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 @import url('https://db.onlinewebfonts.com/c/5994300d042e3a754ceb9207e252465b?family=F8+Heavy');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
 @import "tailwindcss";
 
 @theme {
@@ -11,16 +13,20 @@
     --animate-show-up: show-up-text ease .2s;
 
     --breakpoint-phone: 1rem;
-    --breakpoint-tablet: 40rem;
-    --breakpoint-laptop-sm: 60rem;
+     --breakpoint-tablet-sm: 40rem;
+    --breakpoint-tablet: 50rem;
+    --breakpoint-laptop-sm: 70rem;
     --breakpoint-laptop-lg: 90rem;
     /* --breakpoint-phone-lg:30rem;
     --breakpoint-desktop: 70rem; */
 
-    --items-grid-cols-phone: minmax(300px, 300px);
+    --items-grid-cols-phone: 100%;
     --items-grid-cols-tablet: repeat(2, 300px);
     --items-grid-cols-laptop-sm: repeat(3, 300px);
     --items-grid-cols-laptop-lg: repeat(4, 300px);
+
+
+    --font-heavy: "F8 Heavy";
 
     @keyframes show-up-text {
         0% {
@@ -45,21 +51,16 @@ body,
 html {
     scroll-behavior: smooth;
     font-family: 'Montserrat Variable', serif;
-    overflow-x: hidden;
     background-color: #ede6ce;
-    /* font-size: calc(16px + 6 * ((100vw - 320px) / 680)); */
 }
 
-h1 {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-}
 p.hero {
     font-family: 'F8 Heavy';
-    font-size: 150px;
+
 }
 header p {
     font-family: "Playfair Display", serif;
+}
+p,li {
+    font-family: "Montserrat", sans-serif;
 }
