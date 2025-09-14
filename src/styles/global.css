@@ -10,8 +10,8 @@
     --color-primary: #f8bc69;
     --color-blacked: hsl(224deg 71.43% 4.12%);
     --color-items-menu: #cab795;
-    --animate-show-up: show-up-text ease .2s;
-
+    --animate-show-up: show-up ease .5s;
+    --animate-show-left: show-left ease 1s;
     --breakpoint-phone: 1rem;
      --breakpoint-tablet-sm: 40rem;
     --breakpoint-tablet: 50rem;
@@ -28,15 +28,24 @@
 
     --font-heavy: "F8 Heavy";
 
-    @keyframes show-up-text {
+    @keyframes show-up {
         0% {
-            transform: translate(0, 50px);
-            opacity: 0;
+            transform: translate(0, 200px);
         }
 
         100% {
             transform: translate(0, 0);
-            opacity: 1;
+   
+        }
+    }
+        @keyframes show-left {
+        0% {
+            transform: translate(400px, 0);
+        }
+
+        100% {
+            transform: translate(0, 0);
+   
         }
     }
 }

@@ -16,8 +16,20 @@ const _images = await getCollection("images") as unknown as [{data: [images]}];
 ---
 
 
-
-    <div class="w-full flex flex-col items-center z-10 ">
+    <div class="w-full flex-col items-center z-10 opacity-0" id="menu">
        <slot/>
         <Items items={_images[0].data} client:load />
     </div>
+
+    <script>
+
+        const parent = document.getElementById('menu');
+
+document.addEventListener('scroll',(e)=>{
+    const position = document.body.getBoundingClientRect();
+    if(position.y * -1 > 415){
+        parent?.classList.remove('opacity-0');
+        ['animate-show-up','flex'].map((cls) => parent?.classList.add('class',cls) ) 
+    }
+})
+    </script>

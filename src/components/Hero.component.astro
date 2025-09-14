@@ -3,9 +3,8 @@ import { WhatsappIcon } from "./icons.components";
 import TopNav from "./TopNav.component.astro";
 ---
 
-
 <header class="w-full tablet:h-svh phone:h-fit relative mb-10">
-    <img class="w-[50%] absolute bottom-[-20%] z-0 hidden laptop-lg:block" src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/burger2.png" >
+    <img class="w-[50%] absolute bottom-[-20%] z-0 hidden laptop-lg:block animate-show-up" src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/burger2.png" >
     <nav class="w-full h-34 grid items-center">
          <img src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/DivinaGracia(Beige).png" class="w-24 h-24" />
     </nav>
@@ -22,7 +21,7 @@ import TopNav from "./TopNav.component.astro";
         </div>
 
         <div class="w-full h-fit relative flex flex-col items-center">
-            <img class="phone:w-[80%] w-[90%]" src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/burger1.png" >
+            <img class="phone:w-[80%] w-[90%] tablet:animate-show-left" src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/burger1.png" >
             <p class="phone:hidden tablet-sm:block laptop-sm:absolute right-[10%] bottom-12 text-[#204035]">From freshly baked breads and pastries to juicy, creative burgers made <br> with  quality ingredients — all crafted with care and delivered right to you.</p>
         </div>
     </div>
