@@ -1,0 +1,22 @@
+---
+const { title, text, classes, textButton} = Astro.props;
+---
+
+<div
+    class={`flex flex-col items-center tablet-sm:items-start gap-5 relative phone:w-full tablet:w-2/4 mt-0 tablet-sm:mt-8 ${classes} `}
+>
+    <p
+        class="titlep phone:text-3xl laptop-sm:text-5xl phone:text-center tablet-sm:text-start tablet-sm:mb-4 mb-10 text-[#204035] z-10 w-full"
+    >
+        {title}
+    </p>
+    <p class="font-light phone:text-center tablet-sm:text-start">
+        {text}
+    </p>
+    <a
+        href="http://wa.me/18622203363"
+        class="text-[#ede6ce] rounded-lg px-5 w-fit h-[52px] shadow-lg bg-[#204035] flex items-center font-light justify-center gap-3 z-20"
+        >{textButton}
+        <slot/>
+    </a>
+</div>

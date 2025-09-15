@@ -1,0 +1,38 @@
+---
+import Footer from "../components/Footer.component.astro";
+import NavMenu from "../components/menu/NavMenu.component.astro";
+import Layout from "../layouts/Layout.astro";
+import MenuComponent from "../components/menu/Menu.component.astro";
+import Hero from "../components/Hero.component.astro";
+import TextWithButton from "../components/TextWithButton.component.astro";
+import { WhatsappIcon } from "../components/icons.components";
+---
+
+<Layout>
+    <main class="w-full h-fit phone:px-1 tablet:px-14 relative">
+        <nav
+            class="w-fit h-34 grid items-center absolute top-[-30px] left-30 phone:hidden laptop-sm:grid"
+        >
+            <img
+                src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/DivinaGracia(Beige).png"
+                class="w-24 h-24"
+            />
+        </nav>
+        <TextWithButton
+            classes="laptop-sm:inset-20 justify-center h-[400px]"
+            title="Our Menu"
+            text="Explore our full menu and discover all the delicious options we have for you. If you have any questions or need help choosing, we’re here for you. Feel free to contact us anytime!"
+            textButton="Order now"
+        >
+            <WhatsappIcon />
+        </TextWithButton>
+        <img
+            class="w-[40%] absolute top-10 right-0 z-0 hidden tablet:block animate-show-up"
+            src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/burger2.png"
+        />
+        <MenuComponent delay={0}>
+            <NavMenu />
+        </MenuComponent>
+    </main>
+    <Footer delay={170} />
+</Layout>

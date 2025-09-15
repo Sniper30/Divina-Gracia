@@ -1,14 +1,17 @@
 ---
 import { WhatsappIcon } from "./icons.components";
 import { WhatsappIconXl } from "./icons.components";
+import TextWithButton from "./TextWithButton.component.astro";
 ---
 
 <section
-    class="w-full h-fit rounded-2xl flex justify-center  gap-0 phone:mt-40 tablet:mt-45 laptop-lg:mt-47 mb-5 "
+    class="w-full h-fit rounded-2xl flex justify-center gap-0 phone:mt-40 tablet:mt-45 laptop-lg:mt-47 mb-5"
 >
-    <div class="flex flex-nowrap phone:flex-wrap justify-around phone:justify-center gap-15">
+    <div
+        class="flex flex-nowrap phone:flex-wrap justify-around phone:justify-center gap-15"
+    >
         <div
-            class=" flex phone:items-center tablet-sm:items-end justify-center gap-5 w-fit relative  "
+            class="flex phone:items-center tablet-sm:items-end justify-center gap-5 w-fit relative"
         >
             <img
                 class="w-[420px] h-[600px] image-bg image-bg bg-cover"
@@ -21,30 +24,24 @@ import { WhatsappIconXl } from "./icons.components";
             <svg height="600" class="z-10 absolute top-0 right-0 phone:w-full">
                 <mask id="smallMask">
                     <rect
-  
                         y="-600"
                         rx="20"
                         ry="20"
                         class="rotate-180 animate-towel-up1 shadow-2xl detect-element rect1"
-                        stroke="white"
                         stroke-width="0"
                         fill="red"></rect>
                     <rect
-       
                         y="-600"
                         rx="20"
                         ry="20"
                         class="animate-towel-up2 rotate-180 shadow-2xl detect-element rect2"
-                        stroke="red"
                         stroke-width="0"
                         fill="white"></rect>
                     <rect
-   
                         y="-600"
                         rx="20"
                         ry="20"
                         class="animate-towel-up3 rotate-180 detect-element rect3"
-                        stroke="red"
                         stroke-width="0"
                         fill="white"></rect>
                 </mask>
@@ -52,18 +49,13 @@ import { WhatsappIconXl } from "./icons.components";
                 Sorry, your browser does not support inline SVG.
             </svg>
         </div>
-        <div class="flex flex-col items-center tablet-sm:items-start gap-5 relative phone:w-full tablet:w-2/4 mt-0 tablet-sm:mt-8">
-            <p
-                class="titlep phone:text-3xl laptop-sm:text-5xl phone:text-center tablet-sm:text-start tablet-sm:mb-4 mb-10 text-[#204035] z-10 w-full w-full"
-            >
-                Experience the Goodness of Healthy, Artisan Sourdough at Divina Gracia
-            </p>
-            <p class="font-light phone:text-center tablet-sm:text-start">
-                Experience the authentic taste of our sourdough bread: healthy, natural, and full of life. At Divina Gracia, we bake with care to nurture your well-being. Best of all, you can order it easily and quickly with us!
-            </p>
-                <a href="http://wa.me/18622203363" class="text-[#ede6ce] rounded-lg px-5 w-fit h-[52px] shadow-lg bg-[#204035] flex items-center font-light  justify-center gap-3 z-20">Order your sourdough bread now
-                    <WhatsappIcon />
-                </a>
-        </div>
+
+        <TextWithButton
+            title="Experience the Goodness of Healthy, Artisan Sourdough at Divina Gracia"
+            text="Experience the authentic taste of our sourdough bread: healthy, natural, and full of life. At Divina Gracia, we bake with care to nurture your well-being. Best of all, you can order it easily and quickly with us!"
+            textButton="Order your sourdough bread now"
+        >
+    <WhatsappIcon />
+    </TextWithButton>
     </div>
 </section>

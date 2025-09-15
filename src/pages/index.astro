@@ -14,13 +14,13 @@ import Sourdough from "../components/sourdough.component.astro";
 ---
 
 <Layout>
-	<main class="flex flex-col items-center w-full h-full relative phone:px-1 tablet:px-14">
+	<main class="w-full h-full relative phone:px-1 tablet:px-14">
 		<Hero/>
-		<Menu>
+		<!-- <Menu delay={400}>
 			<NavMenu/>
-		</Menu>
+		</Menu> -->
 		<VideoThumb />
 		<Sourdough />
 	</main>
-	<Footer />
+	<Footer delay="2500" />
 </Layout>
