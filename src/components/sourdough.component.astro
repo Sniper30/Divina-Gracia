@@ -1,0 +1,74 @@
+---
+import { WhatsappIcon } from "./icons.components";
+import { WhatsappIconXl } from "./icons.components";
+---
+
+<section
+    class="w-full h-svh rounded-2xl flex items-center gap-0 phone:my-40 phone:mt-70 tablet-sm:mt-30 tablet-sm:my-30 laptop-sm:mt-0 laptop-sm:my-0 "
+>
+    <div class="flex flex-nowrap phone:flex-wrap items-center justify-around gap-0">
+        <div
+            class=" flex items-end justify-center gap-5 w-fit relative"
+        >
+            <img
+                class="w-[420px] h-[600px] image-bg image-bg bg-cover"
+                src="./src/assets/DSC03262.jpg"
+                alt=""
+            />
+            <div class="flex justify-center items-center absolute top-[-120px] right-[-60px] z-[-1] rounded-full w-fit h-fit bg-[#24d365]-">
+                <WhatsappIconXl/>
+            </div>
+            <svg width="200" height="600" class="z-10 absolute top-0 right-0">
+                <mask id="smallMask">
+                    <rect
+                        x="-130"
+                        y="-600"
+                        rx="20"
+                        ry="20"
+                        class="rotate-180 animate-towel-up1 shadow-2xl detect-element"
+                        width="130"
+                        stroke="white"
+                        stroke-width="0"
+                        fill="red"></rect>
+                    <rect
+                        x="-270"
+                        y="-600"
+                        rx="20"
+                        ry="20"
+                        class="animate-towel-up2 rotate-180 shadow-2xl detect-element"
+                        width="130"
+                        height="500"
+                        stroke="red"
+                        stroke-width="0"
+                        fill="white"></rect>
+                    <rect
+                        x="-410"
+                        y="-600"
+                        rx="20"
+                        ry="20"
+                        class="animate-towel-up3 rotate-180 detect-element"
+                        width="130"
+                        height="400"
+                        stroke="red"
+                        stroke-width="0"
+                        fill="white"></rect>
+                </mask>
+
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </div>
+        <div class="flex flex-col gap-5 relative w-2/4 mt-0 tablet-sm:mt-8">
+            <p
+                class="titlep phone:text-3xl laptop-sm:text-5xl phone:text-center tablet-sm:text-start tablet-sm:mb-4 mb-10 text-[#204035] z-10 w-full laptop-sm:w-[100%]"
+            >
+                Experience the Goodness of Healthy, Artisan Sourdough at Divina Gracia
+            </p>
+            <p class="font-light">
+                Experience the authentic taste of our sourdough bread: healthy, natural, and full of life. At Divina Gracia, we bake with care to nurture your well-being. Best of all, you can order it easily and quickly with us!
+            </p>
+                <a href="http://wa.me/18622203363" class="text-[#ede6ce] rounded-lg px-5 w-fit h-[52px] shadow-lg bg-[#204035] flex items-center font-light  justify-center gap-3 z-20">Order your sourdough bread now
+                    <WhatsappIcon />
+                </a>
+        </div>
+    </div>
+</section>

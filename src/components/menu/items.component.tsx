@@ -13,6 +13,7 @@ export interface images {
     source: string
     title: string
     description: string
+    type:string
 }
 const Items = ({ items }: { items: [images] }) => {
     const { child, setChild, positionModal } = useModal(null)
@@ -30,7 +31,7 @@ const Items = ({ items }: { items: [images] }) => {
             items.map(item => (
                 <li
                     key={item.id}
-                    className="w-full h-fit overflow-hidden rounded-xl shadow-md "
+                    className="w-full h-fit overflow-hidden rounded-xl shadow-md relative group "
                     onClick={(e) => setChild(_Modal({ title: item.title, source: item.source, description: item.description }))}
                 >
                     <img
@@ -39,6 +40,9 @@ const Items = ({ items }: { items: [images] }) => {
                         alt=""
                         className="w-full h-full object-contain hover:scale-125 hover:rotate-3 transition delay-150 duration-300 ease-in-out"
                     />
+                    <div className="bg-[#204035]/60 h-[40px] shadow-lg flex items-center overflow-hidden w-0 transition-all delay-200 duration-100 ease-in-out group-has-hover:w-full absolute bottom-0">
+                        <p className="text-[#ede6ce] px-3 font-bold">{item.type}</p>
+                    </div>
                 </li>
             ))
         }

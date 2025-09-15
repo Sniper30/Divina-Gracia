@@ -4,60 +4,70 @@
             "id":0,
             "source": "https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/bqq-web-americana.png",
             "title": "Smoky Bbq Burger",
-            "description":"Artisan burger bun, 4 oz 100% chuck roast patty, american cheese, crispy onions, bacon and house made bbq sauce."
+            "description":"Artisan burger bun, 4 oz 100% chuck roast patty, american cheese, crispy onions, bacon and house made bbq sauce.",
+            "type":"Medium size burger"
         },
         {
             "id":1,
             "source": "https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/bacon-cheese-web.png",
             "title": "Bacon Cheese Burger",
-            "description":"Artisan burger bun, 4 oz 100% chuck roast patty, american cheese, house special sauce and bacon."
+            "description":"Artisan burger bun, 4 oz 100% chuck roast patty, american cheese, house special sauce and bacon.",
+            "type":"Medium size burger"
         },
         {
             "id":2,
             "source": "https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/americana-web.png",
             "title": "Cheese Burger",
-            "description":"Artisan burger bun, 4 oz 100% chuck roast patty, american cheese, pickles, white onions and house special sauce."
+            "description":"Artisan burger bun, 4 oz 100% chuck roast patty, american cheese, pickles, white onions and house special sauce.",
+            "type":"Medium size burger"
         },
         {
             "id":3,
             "source": "https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/jalapeno-american.png",
             "title": "Jalapeño Burger",
-            "description":"Artisan burger bun, 4 oz 100% chuck roast partty, american cheese, caramelized onions, jalapeño peppers and house special sauce."
+            "description":"Artisan burger bun, 4 oz 100% chuck roast partty, american cheese, caramelized onions, jalapeño peppers and house special sauce.",
+            "type":"Medium size burger"
         },
         {
             "id":4,
             "source": "https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/american-cheese.png",
             "title": "All American Burger",
-            "description":"Artisan burger bun, butterhead lettuce, tomato, 4 oz 100% chuck roast patty, american cheese, white onion, pickles and house special sauce."
+            "description":"Artisan burger bun, butterhead lettuce, tomato, 4 oz 100% chuck roast patty, american cheese, white onion, pickles and house special sauce.",
+            "type":"Medium size burger"
         },
              {
             "id":5,
             "source": "https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/classic-burger.png",
             "title": "Classic Burger",
-            "description":"100% house made burger bun, 5.5 Oz chuck roast burger, cheddar cheese, caramelized onions, butterhead lettuce, tomato and house special sauce. "
+            "description":"100% house made burger bun, 5.5 Oz chuck roast burger, cheddar cheese, caramelized onions, butterhead lettuce, tomato and house special sauce. ",
+            "type":"Large size burger"
         },
              {
             "id":6,
             "source": "https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/latina-burger.png",
             "title": "Latina Burger",
-            "description":"100% house made burger bun, 5.5 Oz chuck roast burger, mozzarella cheese, bacon, caramelized onions ,butterhead lettuce, tomato, potato chips, pink sauce and homemade pineapple sauce."
+            "description":"100% house made burger bun, 5.5 Oz chuck roast burger, mozzarella cheese, bacon, caramelized onions ,butterhead lettuce, tomato, potato chips, pink sauce and homemade pineapple sauce.",
+            "type":"Large size burger"
         },
              {
             "id":7,
             "source": "https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/bbq-burger.png",
             "title": "Creamy BBQ Burger",
-            "description":"100% house made burger bun, 5.5 Oz chuck roast burger, cream cheese, bacon, caramelized onions, butterhead lettuce, homemade bbq sauce."
+            "description":"100% house made burger bun, 5.5 Oz chuck roast burger, cream cheese, bacon, caramelized onions, butterhead lettuce, homemade bbq sauce.",
+            "type":"Large size burger"
         },
              {
             "id":8,
             "source": "https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/artisan-burger.png",
             "title": "Artisan Burger",
-            "description":"100% house made burger bun, 5.5 Oz chuck roast burger, double mozzarella cheese, bacon, sweet coleslaw, potato chips, pink sauce, garlic and cilantro sauce and homemade pineapple."
+            "description":"100% house made burger bun, 5.5 Oz chuck roast burger, double mozzarella cheese, bacon, sweet coleslaw, potato chips, pink sauce, garlic and cilantro sauce and homemade pineapple.",
+            "type":"Large size burger"
         },
              {
             "id":9,
             "source": "https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/mushroom-burger.png",
             "title": "Mushroom Burger",
-            "description":"100% house made burger bun, 5.5 Oz chuck roast burger, caramelized onions and mushrooms, mozzarella cheese, bacon, butterhead lettuce, homemade bbq sauce."
+            "description":"100% house made burger bun, 5.5 Oz chuck roast burger, caramelized onions and mushrooms, mozzarella cheese, bacon, butterhead lettuce, homemade bbq sauce.",
+            "type":"Large size burger"
         }
     ]

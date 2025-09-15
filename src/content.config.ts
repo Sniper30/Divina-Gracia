@@ -7,7 +7,8 @@ const images = defineCollection({
         id:z.number(),
         source: z.string(),
         title: z.string(),
-        description: z.string()
+        description: z.string(),
+        type:z.string()
     })),
 });
 
