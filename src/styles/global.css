@@ -127,3 +127,17 @@ img.image-bg {
     animation-timeline: view();
     animation-range: 100px 400px;
 }
+
+
+    .detect-element.rect1{
+        x: -30.3%;
+        width: 30.33333%;
+    }
+     .detect-element.rect2{
+        x: -63.3%;
+        width: 30.33333%;
+    }
+      .detect-element.rect3{
+        x: -96.3%;
+        width: 30.333333%;
+    }
