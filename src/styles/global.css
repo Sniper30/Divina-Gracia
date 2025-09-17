@@ -149,10 +149,11 @@ div::-webkit-scrollbar{
 }
 
 .animate-div{
-    animation: moveup 10s ease infinite;
+    animation: moveup-tablet 10s ease infinite;
 }
 
-@keyframes moveup {
+@media (max-width: 40rem) {
+  @keyframes moveup-tablet {
     0%{
         top: 0px;
     }
@@ -160,21 +161,54 @@ div::-webkit-scrollbar{
         top:0px;
     }
     25%{
-        top: -780px;
+        top: -400px;
     }
     35%{
-        top: -780px;
+        top: -400px;
     }
     50%{
-         top: -1530px;
+         top: -800px;
     }
     75%{
-        top: -1530px;
+        top: -800px;
     }
     90%{
-        top: -2250px;
+        top: -1200px;
     }
     100%{
-        top: -2250px;
+        top: -1200px;
     }
 }
+}
+
+@media (min-width: 40rem) {
+    
+    @keyframes moveup-tablet {
+        0%{
+            top: 0px;
+        }
+        10%{
+            top:0px;
+        }
+        25%{
+            top: -750px;
+        }
+        35%{
+            top: -750px;
+        }
+        50%{
+             top: -1500px;
+        }
+        75%{
+            top: -1500px;
+        }
+        90%{
+            top: -2250px;
+        }
+        100%{
+            top: -2250px;
+        }
+    }
+
+}
+
