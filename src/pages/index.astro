@@ -16,11 +16,13 @@ import Sourdough from "../components/sourdough.component.astro";
 <Layout>
 	<main class="w-full h-full relative phone:px-1 tablet:px-14">
 		<Hero/>
-		<!-- <Menu delay={400}>
-			<NavMenu/>
-		</Menu> -->
 		<VideoThumb />
 		<Sourdough />
 	</main>
 	<Footer delay="2500" />
 </Layout>
+<script>
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+</script>

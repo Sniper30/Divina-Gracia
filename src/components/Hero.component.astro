@@ -3,27 +3,86 @@ import { WhatsappIcon } from "./icons.components";
 import TopNav from "./TopNav.component.astro";
 ---
 
-<header class="w-full h-svh relative mb-16">
-    <img class="w-[40%] absolute bottom-[-10%] z-0 hidden laptop-lg:block animate-show-up" src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/burger2.png" >
+<header class="w-full h-fit relative">
+    <img
+        class="w-[40%] absolute bottom-[-20%] z-0 hidden laptop-lg:block animate-show-up"
+        src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/burger2.png"
+    />
     <nav class="w-fit h-34 grid items-center">
-         <img src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/DivinaGracia(Beige).png" class="w-24 h-24" />
+        <img
+            src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/DivinaGracia(Beige).png"
+            class="w-24 h-24"
+        />
     </nav>
-    <div class="flex max-[1300px]:flex-wrap phone:justify-center phone:items-center laptop-sm:items-start">
-        <div class="relative flex flex-col items-center tablet-sm:block ">
-            <p class="hero phone:text-[4.5rem] tablet-sm:text-[8rem] text-[#204035]">Burgers</p>
-            <p class="titlep phone:text-3xl tablet:text-start phone:text-center mb-10 text-[#204035] z-10 w-full laptop-sm:w-[70%] laptop-sm:text-5xl">Where every bite brings us together</p>
-            <div class="flex  tablet:justify-start tablet-sm:justify-center gap-5 z-10 ">
-                <a href="https://divinagracianj.com/menu" class="bg-[#b4945a] rounded-lg w-[145px] h-[52px] p-3 shadow-lg text-[#204035] font-light flex items-center justify-center">See our menu</a>
-                <a href="http://wa.me/18622203363" class="text-[#ede6ce] rounded-lg w-[175px] h-[52px] shadow-lg bg-[#204035] flex items-center font-light  justify-center gap-3 z-20">Get in touch
+    <div
+        class="flex max-[1300px]:flex-wrap phone:justify-center phone:items-center laptop-sm:items-start"
+    >
+        <div class="relative flex flex-col items-center tablet-sm:block">
+            <p
+                class="hero phone:text-[4.5rem] tablet-sm:text-[8rem] text-[#204035]"
+            >
+                Burgers
+            </p>
+            <p
+                class="titlep phone:text-2xl tablet:text-start phone:text-center mb-10 text-[#204035] z-10 w-full laptop-sm:w-[70%] laptop-sm:text-3xl"
+            >
+                High-Quality American & Latin Burgers, Plus Freshly Baked Sourdough Loaves
+            </p>
+            <div
+                class="flex tablet:justify-start tablet-sm:justify-center gap-5 z-10"
+            >
+                <a
+                    href="https://divinagracianj.com/menu"
+                    class="bg-[#b4945a] rounded-lg w-[145px] h-[52px] p-3 shadow-lg text-[#204035] font-light flex items-center justify-center"
+                    >See our menu</a
+                >
+                <a
+                    href="http://wa.me/18622203363"
+                    class="text-[#ede6ce] rounded-lg w-[175px] h-[52px] shadow-lg bg-[#204035] flex items-center font-light justify-center gap-3 z-20"
+                    >Get in touch
                     <WhatsappIcon />
                 </a>
             </div>
         </div>
 
-        <div class="w-full h-fit relative flex flex-col items-center">
-            <img class="phone:w-[80%] w-[90%] tablet:animate-show-left" src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/burger1.png" >
-            <p class="phone:hidden tablet-sm:block laptop-sm:absolute right-[10%] bottom-0 text-[#204035] laptop-sm:w-fit">From freshly baked breads and pastries to juicy, creative burgers made <br> with  quality ingredients — all crafted with care and delivered right to you.</p>
+        <div
+            class="w-full phone:h-[500px] tablet-sm:h-[550px] laptop-sm:h-[650px] laptop-lg:w-full relative flex flex-col items-center overflow-hidden"
+        >
+            <div class="h-[3000px] relative animate-div w-full flex flex-col">
+                <div
+                    class="w-full phone:h-[750px] tablet-sm:h-[750px] flex justify-center items-start"
+                >
+                    <img
+                        class="w-full tablet-sm:w-[70%] tablet:w-[70%] laptop-lg:w-full z-20"
+                        src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/burger1.png"
+                    />
+                </div>
+                <div
+                    class="w-full phone:h-[750px] tablet-sm:h-[750px] flex justify-center items-start"
+                >
+                    <img
+                        class="w-full tablet-sm:w-[70%] tablet:w-[70%] laptop-lg:w-full z-20"
+                        src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/baconweb2.png"
+                    />
+                </div>
+                <div
+                    class="w-full phone:h-[750px] tablet-sm:h-[750px] flex justify-center items-start"
+                >
+                    <img
+                        class="w-full tablet-sm:w-[70%] tablet:w-[70%] laptop-lg:w-full z-20"
+                        src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/classicawebamericana2.png"
+                    />
+                </div>
+                <div
+                    class="w-full phone:h-[750px] tablet-sm:h-[750px] flex justify-center items-start"
+                >
+                    <img
+                        class="w-full tablet-sm:w-[70%] tablet:w-[70%] laptop-lg:w-full z-20"
+                        src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/hongoswebamericana.png"
+                    />
+                </div>
+           
+            </div>
         </div>
     </div>
 </header>
-

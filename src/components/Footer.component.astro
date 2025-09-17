@@ -31,7 +31,6 @@ const {delay} = Astro.props;
     document.addEventListener('scroll',()=>{
         if(c === 1) return ;
         const position = document.body.getBoundingClientRect();
-        console.log(position.y)
         if(position.y * -1 > +delay){
              typing(p);
              c=1;
@@ -43,10 +42,8 @@ const {delay} = Astro.props;
     
     function typing(element: HTMLElement | null){
     const text = "We love to do what we do".split('');
-    console.log(text)
     let c = 0;
     const interval = setInterval(()=> {
-        console.log('going')
         p!.textContent =  (c+1 ) < text.length ? text.slice(0,c + 1).join('') + '│' : text.slice(0,c + 1).join('')
         c++
         if(c === text.length) clearInterval(interval);

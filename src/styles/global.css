@@ -95,11 +95,13 @@
 
 body,
 html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     font-family: 'Montserrat Variable', serif;
     background-color: #ede6ce;
 }
-
+div{
+    scroll-behavior: smooth;
+}
 p.hero {
     font-family: 'F8 Heavy';
 
@@ -121,23 +123,58 @@ img.image-bg {
     mask-image: url(#smallMask);
     -webkit-mask-image: url(#smallMask);
 }
-
-.detect-element{
+div::-webkit-scrollbar{
+    display: none;
+}
+.detect-element {
     /* animation: towels ease-in-out forwards; */
     animation-timeline: view();
     animation-range: 100px 400px;
 }
 
 
-    .detect-element.rect1{
-        x: -30.3%;
-        width: 30.33333%;
+.detect-element.rect1 {
+    x: -30.3%;
+    width: 30.33333%;
+}
+
+.detect-element.rect2 {
+    x: -63.3%;
+    width: 30.33333%;
+}
+
+.detect-element.rect3 {
+    x: -96.3%;
+    width: 30.333333%;
+}
+
+.animate-div{
+    animation: moveup 10s ease infinite;
+}
+
+@keyframes moveup {
+    0%{
+        top: 0px;
     }
-     .detect-element.rect2{
-        x: -63.3%;
-        width: 30.33333%;
+    10%{
+        top:0px;
     }
-      .detect-element.rect3{
-        x: -96.3%;
-        width: 30.333333%;
+    25%{
+        top: -780px;
     }
+    35%{
+        top: -780px;
+    }
+    50%{
+         top: -1530px;
+    }
+    75%{
+        top: -1530px;
+    }
+    90%{
+        top: -2280px;
+    }
+    100%{
+        top: -2280px;
+    }
+}
