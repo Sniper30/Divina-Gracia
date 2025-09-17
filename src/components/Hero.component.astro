@@ -1,19 +1,29 @@
 ---
 import { WhatsappIcon } from "./icons.components";
 import TopNav from "./TopNav.component.astro";
+
 ---
 
+
 <header class="w-full h-fit relative">
-    <img
-        class="w-[40%] absolute bottom-[-20%] z-0 hidden laptop-lg:block animate-show-up"
-        src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/burger2.png"
-        fetchpriority=high
-    />
+    <div class="w-[40%] absolute bottom-[-20%] z-0 hidden laptop-lg:block animate-show-up">
+   <img
+            class="w-full"
+            src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/compressed/jalapeno-compressed.jpg"
+            fetchpriority=high
+            id="jalapeno-compressed.jpg"
+            alt="Jalapeno Burger"
+        />
+    </div>
+     
+
+
     <nav class="w-fit h-34 grid items-center">
         <img
-            src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/DivinaGracia(Beige).png"
+            src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/compressed/logo-compressed.png"
             class="w-24 h-24"
             fetchpriority=high
+            alt="Logo Divina Gracia"
         />
     </nav>
     <div
@@ -54,43 +64,46 @@ import TopNav from "./TopNav.component.astro";
             <div
                 class="phone:h-[1600px] tablet-sm:h-[3000px] relative animate-div w-full flex flex-col"
             >
+
+            {
+                ["americana-compressed.jpg","bacon-americana-compressed.jpg","classica-americana-compressed.jpg","bbq-americana-compressed.jpg"]
+                .map((img)=>(
                 <div
-                    class="w-full phone:h-[400px] tablet-sm:h-[750px] flex justify-center phone:items-center tablet-sm:items-start"
+                    class="w-full phone:h-[400px] tablet-sm:h-[750px] flex justify-center phone:items-center tablet-sm:items-start "
+                    
                 >
                     <img
-                        class="w-full tablet-sm:w-[70%] tablet:w-[70%] laptop-lg:w-[90%] z-20"
-                        src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/burger1.png"
-                        fetchpriority=high
+                        class="w-full min-[400px]:w-[60%] tablet:w-[60%] laptop-lg:w-[90%] z-20"
+                        src={`https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/compressed/${img}`}
+                        data-src={`${img.split('-compressed').join('')}`}
+                        id={img}
+                        loading="lazy"
+                        fetchpriority="high"
+                        alt="Burger"
                     />
                 </div>
-                <div
-                    class="w-full phone:h-[400px] tablet-sm:h-[750px] flex justify-center phone:items-center tablet-sm:items-start"
-                >
-                    <img
-                        class="w-full tablet-sm:w-[70%] tablet:w-[70%] laptop-lg:w-[90%] z-20"
-                        src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/baconweb2.png"
-                        fetchpriority=high
-                    />
-                </div>
-                <div
-                    class="w-full phone:h-[400px] tablet-sm:h-[750px] flex justify-center phone:items-center tablet-sm:items-start"
-                >
-                    <img
-                        class="w-full tablet-sm:w-[70%] tablet:w-[70%] laptop-lg:w-[90%] z-20"
-                        src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/classicawebamericana2.png"
-                        fetchpriority=high
-                    />
-                </div>
-                <div
-                    class="w-full phone:h-[400px] tablet-sm:h-[750px] flex justify-center phone:items-center tablet-sm:items-start"
-                >
-                    <img
-                        class="w-full tablet-sm:w-[70%] tablet:w-[70%] laptop-lg:w-[90%] z-20"
-                        src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/hongoswebamericana.png"
-                        fetchpriority=high
-                    />
-                </div>
+
+                ))
+            }
             </div>
         </div>
     </div>
 </header>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded',()=>{
+
+        const hightImgs =  ["americana","bacon-americana","classica-americana","bbq-americana","jalapeno"];
+        hightImgs.forEach((name)=>{
+            const img = document.getElementById(name+'-compressed.jpg') as HTMLImageElement;
+            img!.src = `https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/images/${name}.jpg`;
+            img.style.filter = 'blur(10px)'
+            console.log(img)
+            img.onload = ()=> img.style.filter = 'blur(0px)'
+        })
+    })
+
+
+
+</script>

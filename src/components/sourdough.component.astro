@@ -12,11 +12,12 @@ import TextWithButton from "./TextWithButton.component.astro";
     >
         <div
             class="flex phone:items-center tablet-sm:items-end justify-center gap-5 w-fit relative"
+            id="img-sourdough"
         >
             <img
                 class="w-[420px] h-[600px] image-bg image-bg bg-cover"
-                src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/DSC03262.jpg"
-                alt=""
+                src=""
+                alt="sourdough bread"
             />
             <!-- <div class="flex justify-center items-center absolute top-[-120px] phone:right-0 tablet-sm:right-[-60px] z-[-1] rounded-full w-fit h-fit bg-[#24d365]-">
                 <WhatsappIconXl/>
@@ -59,3 +60,21 @@ import TextWithButton from "./TextWithButton.component.astro";
     </TextWithButton>
     </div>
 </section>
+
+<script>
+    const callback = (entries : any,observer: any)=>{
+        entries.forEach((entry:any) => {
+            if(entry.isIntersecting){
+                let img = entry.target.querySelector('img')
+                img.src = 'https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/compressed/pan-compressed.jpg'
+                img.onload = ()=>{
+                    observer.unobserve(img_container);
+                }
+            }
+        });
+    }
+    let img_container = document.querySelector('#img-sourdough') as HTMLDivElement;
+    let observer = new IntersectionObserver(callback);
+
+    observer.observe(img_container);
+</script>

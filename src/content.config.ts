@@ -1,6 +1,6 @@
 import { glob } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
-const images = defineCollection({
+const menu = defineCollection({
     loader: glob({ pattern: "**/*.json", base: "./src/data" }),
     schema: z.array(
         z.object({
@@ -12,4 +12,4 @@ const images = defineCollection({
     })),
 });
 
-export const collections = { images };
+export const collections = { menu };

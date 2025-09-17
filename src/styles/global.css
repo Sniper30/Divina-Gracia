@@ -1,5 +1,5 @@
-@import url('https://db.onlinewebfonts.com/c/5994300d042e3a754ceb9207e252465b?family=F8+Heavy');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
 
 
 @import "tailwindcss";
@@ -90,7 +90,7 @@
 
 @font-face {
     font-family: "F8 Heavy";
-    src: url("https://db.onlinewebfonts.com/t/5994300d042e3a754ceb9207e252465b.woff2")format("woff2");
+    src: url("https://divina-gracia.nyc3.digitaloceanspaces.com/fonts/divinagracia/5994300d042e3a754ceb9207e252465b.woff2") format("woff2");
 }
 
 body,

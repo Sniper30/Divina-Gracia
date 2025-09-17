@@ -8,14 +8,14 @@ interface modalData {
     title: "",
     children: ReactNode
 }
-export interface images {
+export interface menu {
     id: number
     source: string
     title: string
     description: string
     type:string
 }
-const Items = ({ items }: { items: [images] }) => {
+const Items = ({ items }: { items: [menu] }) => {
     const { child, setChild, positionModal } = useModal(null)
 
     return <ul className="grid phone:grid-cols-(--items-grid-cols-phone) tablet:grid-cols-(--items-grid-cols-tablet) laptop-sm:grid-cols-(--items-grid-cols-laptop-sm) laptop-lg:grid-cols-(--items-grid-cols-laptop-lg) phone:w-full h-fit justify-between gap-14 ">
