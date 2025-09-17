@@ -35,7 +35,7 @@ const Items = ({ items }: { items: [images] }) => {
                     onClick={(e) => setChild(_Modal({ title: item.title, source: item.source, description: item.description }))}
                 >
                     <img
-
+                        fetchPriority='high'
                         src={item.source}
                         alt=""
                         className="w-full h-full object-contain hover:scale-125 hover:rotate-3 transition delay-150 duration-300 ease-in-out"
