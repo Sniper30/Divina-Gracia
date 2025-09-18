@@ -1,0 +1,27 @@
+---
+import Footer from "../components/footer/Footer.component.astro";
+import Layout from "../layouts/Layout.astro";
+import StoryComponent from "../components/story/Story.component.astro";
+import PagesHeader from "../components/PagesHeader.component.astro";
+import TextWithButton from "../components/TextWithButton.component.astro";
+import { WhatsappIcon } from "../components/icons.components";
+
+---
+
+
+<Layout>
+	<main class="w-full h-full relative phone:px-1 tablet:px-14 flex flex-col items-center">
+        <PagesHeader>
+                 <TextWithButton
+                    classes="laptop-sm:inset-20 justify-center h-[400px]"
+                    title="Our Story"
+                    text="Welcome to Divina Gracia, a project born from faith, passion, and a love for the artisanal. What started as a dream soon became our way of sharing authentic flavors and meaningful experiences with our community. Here begins our story."
+                    textButton="Reach out for more"
+                >
+                    <WhatsappIcon />
+                </TextWithButton>
+        </PagesHeader>
+		<StoryComponent />
+	</main>
+	<Footer />
+</Layout>

@@ -13,34 +13,12 @@ interface propsItems {
 const _menu = (await getCollection("menu")) as unknown as [
     { data: [menu] },
 ];
-const { delay } = Astro.props;
 ---
 
 <div
     class="w-full flex-col items-center z-10 opacity-0"
     id="menu"
-    data-delay={delay}
 >
     <slot />
-    <Items items={_menu[0].data} client:load />
+    <Items items={_menu[0].data} />
 </div>
-
-<script>
-    const parent = document.getElementById("menu");
-    const delay = parent?.getAttribute("data-delay") || 200;
-    if (+delay <= 0) _show();
-    document.addEventListener("DOMContentLoaded", () => {
-        const position = document.body.getBoundingClientRect();
-        if (position.y * -1 > +delay) _show();
-    });
-    document.addEventListener("scroll", (e) => {
-        const position = document.body.getBoundingClientRect();
-        if (position.y * -1 > +delay) _show();
-    });
-    function _show() {
-        parent?.classList.remove("opacity-0");
-        ["animate-show-up", "flex"].map((cls) =>
-            parent?.classList.add("class", cls),
-        );
-    }
-</script>

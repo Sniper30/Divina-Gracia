@@ -1,0 +1,27 @@
+---
+import { WhatsappIcon } from "./icons.components";
+import TextWithButton from "./TextWithButton.component.astro";
+
+
+---
+
+   <header>
+            <nav
+                class=""
+            >
+                <img
+                    src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/images/Divina%20Gracia%20(Beige).png"
+                    class="w-24 h-24"
+                />
+            </nav>
+            <div class="flex phone:flex-wrap phone:justify-center tablet:justify-between tablet:flex-nowrap">
+                <slot />
+                <img
+                    class="w-[40%] animate-show-up phone:place-self-center"
+                    src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/images/bbq-americana.jpg"
+                />
+
+            </div>
+
+
+        </header>

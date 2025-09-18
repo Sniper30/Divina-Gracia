@@ -98,6 +98,8 @@ html {
     /* scroll-behavior: smooth; */
     font-family: 'Montserrat Variable', serif;
     background-color: #ede6ce;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 div{
     scroll-behavior: smooth;

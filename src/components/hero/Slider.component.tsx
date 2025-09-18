@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 
 export const Slider = () => {
-
     const [images, setImages] = useState(["compressed/americana-compressed.jpg", "compressed/bacon-americana-compressed.jpg", "compressed/classica-americana-compressed.jpg", "compressed/bbq-americana-compressed.jpg"]);
 
     useEffect(() => {
