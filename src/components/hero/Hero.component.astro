@@ -1,0 +1,71 @@
+---
+import { WhatsappIcon } from "../icons.components";
+import { Slider } from "./Slider.component";
+
+
+---
+
+        <header class="w-full h-fit relative">
+            <div class="w-[40%] absolute bottom-[-20%] z-0 hidden laptop-lg:block animate-show-up">
+                <img
+                    class="w-full"
+                    src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/compressed/jalapeno-compressed.jpg"
+                    fetchpriority="high"
+                    id="jalapeno-compressed.jpg"
+                    alt="Jalapeno Burger"
+                />
+            </div>
+
+
+
+            <nav class="w-fit h-34 grid items-center">
+                <img
+                    src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/compressed/logo-compressed.png"
+                    class="w-24 h-24"
+                    fetchpriority="high"
+                    alt="Logo Divina Gracia"
+                />
+            </nav>
+            <div
+                class="flex max-[1300px]:flex-wrap phone:justify-center phone:items-center laptop-sm:items-start"
+            >
+                <div class="relative flex flex-col items-center tablet-sm:block">
+                    <p
+                        class="hero phone:text-[4.5rem] tablet-sm:text-[8rem] text-[#204035] tablet:text-start phone:text-center"
+                    >
+                        Burgers
+                    </p>
+                    <p
+                        class="titlep phone:text-2xl tablet:text-start phone:text-center mb-10 text-[#204035] z-10 w-full laptop-sm:w-[70%] laptop-sm:text-3xl"
+                    >
+                        High-Quality American & Latin Burgers, Plus Freshly Baked
+                        Sourdough Loaves
+                    </p>
+                    <div
+                        class="flex tablet:justify-start tablet-sm:justify-center gap-5 z-10"
+                    >
+                        <a
+                            href="https://divinagracianj.com/menu"
+                            class="bg-[#b4945a] rounded-lg w-[145px] h-[52px] p-3 shadow-lg text-[#204035] font-light flex items-center justify-center"
+                        >See our menu</a>
+                        <a
+                            href="http://wa.me/18622203363"
+                            class="text-[#ede6ce] rounded-lg w-[175px] h-[52px] shadow-lg bg-[#204035] flex items-center font-light justify-center gap-3 z-20"
+                        >Get in touch
+                            <WhatsappIcon />
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="w-full phone:h-[400px] tablet-sm:h-[550px] laptop-sm:h-[650px] laptop-lg:w-full relative flex flex-col items-center overflow-hidden"
+                >
+                    <div
+                        class="phone:h-[1600px] tablet-sm:h-[3000px] relative animate-div w-full flex flex-col"
+                    >
+
+                      <Slider />
+                    </div>
+                </div>
+            </div>
+        </header>

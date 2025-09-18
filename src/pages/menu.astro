@@ -1,9 +1,9 @@
 ---
-import Footer from "../components/Footer.component.astro";
+import Footer from "../components/footer/Footer.component.astro";
 import NavMenu from "../components/menu/NavMenu.component.astro";
 import Layout from "../layouts/Layout.astro";
 import MenuComponent from "../components/menu/Menu.component.astro";
-import Hero from "../components/Hero.component.astro";
+
 import TextWithButton from "../components/TextWithButton.component.astro";
 import { WhatsappIcon } from "../components/icons.components";
 ---
@@ -34,5 +34,5 @@ import { WhatsappIcon } from "../components/icons.components";
             <NavMenu />
         </MenuComponent>
     </main>
-    <Footer delay={170} />
+    <Footer />
 </Layout>

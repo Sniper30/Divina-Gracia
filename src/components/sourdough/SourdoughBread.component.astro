@@ -1,0 +1,60 @@
+---
+import LogoImg from "../footer/LogoImg.component"
+import { WhatsappIcon } from "../icons.components"
+import TextWithButton from "../TextWithButton.component.astro"
+
+---
+
+
+
+        <section
+            class="w-full h-fit rounded-2xl flex justify-center gap-0 phone:mt-40 tablet:mt-45 laptop-lg:mt-47 mb-5"
+        >
+            <div
+                class="flex flex-nowrap phone:flex-wrap justify-around phone:justify-center gap-15"
+            >
+                <div
+                    class="flex phone:items-center tablet-sm:items-end justify-center gap-5 w-fit relative"
+                    
+                >
+                  <LogoImg client:visible className="w-[420px] h-[600px] image-bg image-bg bg-cover" id="img-sourdough" alt="sourdough bread" source='https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/images/DSC03262.jpg' />
+
+                    <svg height="600" class="z-10 absolute top-0 right-0 phone:w-full">
+                        <mask id="smallMask">
+                            <rect
+                                y="-600"
+                                rx="20"
+                                ry="20"
+                                class="rotate-180 animate-towel-up1 shadow-2xl detect-element rect1"
+                                stroke-width="0"
+                                fill="red"></rect>
+                            <rect
+                                y="-600"
+                                rx="20"
+                                ry="20"
+                                class="animate-towel-up2 rotate-180 shadow-2xl detect-element rect2"
+                                stroke-width="0"
+                                fill="white"></rect>
+                            <rect
+                                y="-600"
+                                rx="20"
+                                ry="20"
+                                class="animate-towel-up3 rotate-180 detect-element rect3"
+                                stroke-width="0"
+                                fill="white"></rect>
+                        </mask>
+
+                        Sorry, your browser does not support inline SVG.
+                    </svg>
+                </div>
+
+                 <TextWithButton
+                    title="Experience the Goodness of Healthy, Artisan Sourdough at Divina Gracia"
+                    text="Experience the authentic taste of our sourdough bread: healthy, natural, and full of life. At Divina Gracia, we bake with care to nurture your well-being. Best of all, you can order it easily and quickly with us!"
+                    textButton="Order your sourdough bread now"
+                >
+                    <WhatsappIcon />
+                </TextWithButton> 
+            </div>
+
+        </section>
