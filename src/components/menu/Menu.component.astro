@@ -10,7 +10,7 @@ interface propsItems {
     data: menu;
 }
 
-const _menu = (await getCollection("images")) as unknown as [
+const _menu = (await getCollection("menu")) as unknown as [
     { data: [menu] },
 ];
 const { delay } = Astro.props;
