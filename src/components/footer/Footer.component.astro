@@ -12,16 +12,19 @@ import LogoImg from "./LogoImg.component";
         <div class="flex items-start justify-center gap-12 w-full border-0 h-[100px] laptop-sm:h-[300px] laptop-sm:border-r-[1px] border-blacked/30">
             <ul class="w-fit flex flex-col items-center gap-3">
                 <li class="font-bold w-32 h-10  flex justify-center items-center border-b-[1px] border-blacked/40">ABOUT</li>
-                <li>OUR STORY</li>
+                <li class="font-light"><a href="/story">Our story</a></li>
             </ul>
-            <ul class="w-fit flex flex-col items-center gap-3">
+            <!-- <ul class="w-fit flex flex-col items-center gap-3">
                 <li class="font-bold w-32 h-10  flex justify-center items-center border-b-[1px] border-blacked/40">HELP</li>
                 <li>CONTACT</li>
-            </ul>
+            </ul> -->
         </div>
         <div class="w-full laptop-sm:pl-5 flex flex-col items-center laptop-sm:block">
-            <p  class="text-center tablet:text-start text-secondary tablet:tracking-wider max-[600px]:p-2">We are a small business focused on handcrafted products such as artisan burgers with a latin fusion made with quality ingredients and delicious french style, slow fermented and naturally leavened breads and pastries, that go fron the classic fountry loaf of sourdough bread to a savory or sweet pastry, with a touch or american influence.</p>
+            <p  class="text-center tablet:text-start  font-light tablet:tracking-wider max-[600px]:p-2">We are a small business focused on handcrafted products such as artisan burgers with a latin fusion made with quality ingredients and delicious french style, slow fermented and naturally leavened breads and pastries, that go fron the classic fountry loaf of sourdough bread to a savory or sweet pastry, with a touch or american influence.</p>
             <LogoImg client:visible className="w-[100px] h-[100px]" id="logoxl" alt="Logo Divina Gracia" source='https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/images/Divina%20Gracia%20(Beige).png' />
         </div>
+    </div>
+    <div class="text-secondary font-light w-full p-5 text-center">
+        <p>760 US-46, Suite 6 Kenvil NJ - 862-220-3363</p>
     </div>
 </footer>

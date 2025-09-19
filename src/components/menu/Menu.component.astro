@@ -16,9 +16,9 @@ const _menu = (await getCollection("menu")) as unknown as [
 ---
 
 <div
-    class="w-full flex-col items-center z-10 opacity-0"
+    class="w-full flex-col items-center "
     id="menu"
 >
     <slot />
-    <Items items={_menu[0].data} />
+    <Items items={_menu[0].data} client:visible />
 </div>
