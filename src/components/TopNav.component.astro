@@ -1,17 +1,21 @@
 ---
-import { InstagramIcon, TiktokIcon } from "./icons.components";
+import {ShoppingCarIcon } from "./icons.components";
 ---
+ <nav class="w-full h-34 grid grid-cols-2 items-center place-content-center">
+    <a href="/">
+        <img
+            src="https://d28f3w0x9i80nq.cloudfront.net/restaurantImages/4228bcfa-1507-4e7e-a55b-c67a880f53a0/logonobg.png"
+            class="w-20 h-20"
+            fetchpriority="high"
+            alt="Logo Divina Gracia"
+        />
 
-<nav
-    class="rounded-full w-full overflow-hidden max-w-[700px] mb-20"
->
-    <ul class="flex gap-7 justify-center items-center w-full">
-        <li class="h-fit flex items-center basis-4/6">
-            <img src="https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/compressed/logo-compressed.png" class="w-20 h-20" />
-        </li>
-        <li class="h-fit "> <a href="https://www.instagram.com/divinagracianj/"><InstagramIcon /></a> </li>
-         <li class="h-fit"> <a href="https://www.tiktok.com/@divinagracianj"><TiktokIcon /></a> </li>
-    </ul>
-</nav>
-
+    </a>
+        <a
+            href="https://order.toasttab.com/online/divina-gracia-cocina-artesanal-46-center-grove-rd-u-213"
+            class="text-[#ede6ce] rounded-lg w-[175px] h-[52px] tablet:shadow-lg bg-[#204035] place-self-end self-center flex items-center font-light justify-center gap-3 z-20"
+            >Order now
+            <ShoppingCarIcon />
+        </a>
+    </nav>
 

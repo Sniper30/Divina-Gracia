@@ -1,23 +1,11 @@
 ---
 import { ShoppingCarIcon, WhatsappIcon } from "../icons.components";
+import TopNav from "../TopNav.component.astro";
 import { Slider } from "./Slider.component";
 ---
 
 <header class="w-full h-fit relative">
-    <nav class="w-full h-34 grid grid-cols-2 items-center place-content-center">
-        <img
-            src="https://d28f3w0x9i80nq.cloudfront.net/restaurantImages/4228bcfa-1507-4e7e-a55b-c67a880f53a0/logonobg.png"
-            class="w-20 h-20"
-            fetchpriority="high"
-            alt="Logo Divina Gracia"
-        />
-        <a
-            href="https://order.toasttab.com/online/divina-gracia-cocina-artesanal-46-center-grove-rd-u-213"
-            class="text-[#ede6ce] rounded-lg w-[175px] h-[52px] tablet:shadow-lg bg-[#204035] place-self-end self-center flex items-center font-light justify-center gap-3 z-20"
-            >Order now
-            <ShoppingCarIcon />
-        </a>
-    </nav>
+   <TopNav/>
 
     <div
         class="w-[30%] absolute bottom-[-20%] z-0 hidden laptop-lg:block animate-show-up"
@@ -55,7 +43,7 @@ import { Slider } from "./Slider.component";
                     >Check our menu</a
                 >
                 <a
-                    href="http://wa.me/18622203363"
+                    href="https://wa.me/message/WFEBDG4NJOBLM1"
                     class="text-[#ede6ce] rounded-lg w-[175px] h-[52px] tablet:shadow-lg bg-[#204035] flex items-center font-light justify-center gap-3 z-20"
                     >Contact us
                     <WhatsappIcon />
