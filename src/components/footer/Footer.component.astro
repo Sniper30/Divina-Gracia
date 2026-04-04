@@ -1,30 +1,41 @@
 ---
+import { FacebookIcon, InstagramIcon, TiktokIcon } from "../icons.components";
 import LogoImg from "./LogoImg.component";
 
 
 ---
 
-<footer class="bg-[#f1d29a] w-full h-fit flex flex-col items-center gap-30 pt-7 mt-5" >
+<footer class=" bg-[#203f34] w-full h-fit flex flex-col items-center gap-30 text-[#f1d29a]" >
     <div class="flex flex-col items-center gap-3 phone:w-5/6 tablet:w-6/6">
-       <p id="typing-p" class="hero text-[#204035] text-8xl w-full max-w-[1000px] text-center pt-4">We love to do what we do</p>
+       <p id="typing-p" class="hero text-[#f1d29a] text-8xl w-full max-w-[1000px] text-center pt-4">We love to do what we do</p>
     </div>
-    <div class="grid max-[1005px]:grid-cols-[100%] grid-cols-[repeat(2,500px)] grid-rows-1 place-content-center  w-full ">
-        <div class="flex items-start justify-center gap-12 w-full border-0 h-[100px] laptop-sm:h-[300px] laptop-sm:border-r-[1px] border-blacked/30">
+    <div class="grid grid-cols-2 place-content-center ">
+        <div class="flex items-start justify-center gap-12 w-full h-[100px] laptop-sm:h-[300px]">
             <ul class="w-fit flex flex-col items-center gap-3">
                 <li class="font-bold w-32 h-10  flex justify-center items-center border-b-[1px] border-blacked/40">ABOUT</li>
                 <li class="font-light"><a href="/story">Our story</a></li>
+                <li class="font-light"><a href="/story">Contact us</a></li>
+                <li class="font-light flex">
+                    <InstagramIcon />
+                    <FacebookIcon />
+                    <TiktokIcon />
+                </li>
             </ul>
             <!-- <ul class="w-fit flex flex-col items-center gap-3">
                 <li class="font-bold w-32 h-10  flex justify-center items-center border-b-[1px] border-blacked/40">HELP</li>
                 <li>CONTACT</li>
             </ul> -->
         </div>
-        <div class="w-full laptop-sm:pl-5 flex flex-col items-center laptop-sm:block">
-            <p  class="text-center tablet:text-start  font-light tablet:tracking-wider max-[600px]:p-2">We are a small business focused on handcrafted products such as artisan burgers with a latin fusion made with quality ingredients and delicious french style, slow fermented and naturally leavened breads and pastries, that go fron the classic fountry loaf of sourdough bread to a savory or sweet pastry, with a touch or american influence.</p>
-            <LogoImg client:visible className="w-[100px] h-[100px]" id="logoxl" alt="Logo Divina Gracia" source='https://divina-gracia.nyc3.cdn.digitaloceanspaces.com/images/images/Divina%20Gracia%20(Beige).png' />
+        <div class="w-full flex flex-col items-center ">
+            <p  class="titlep text-2xl laptop-sm:w-200 pl-1">We believe in real food. That means: <br>
+    •    No high fructose corn syrup <br>
+    •    No preservatives <br>
+    •    No artificial chemicals
+</p>
+            <!-- <LogoImg client:visible className="w-[100px] h-[100px]" id="logoxl" alt="Logo Divina Gracia" source="" /> -->
         </div>
     </div>
-    <div class="text-secondary font-light w-full p-5 text-center">
-        <p>760 US-46, Suite 6 Kenvil NJ - 862-220-3363</p>
+    <div class=" font-light w-full p-5 text-center">
+        <p>330 S Salem St, Dover, NJ 07801 - 9736060887</p>
     </div>
 </footer>

@@ -1,5 +1,5 @@
 ---
-const { title, text, textButton } = Astro.props;
+const { title, text, textButton,link } = Astro.props;
 ---
 
 <div
@@ -14,7 +14,7 @@ const { title, text, textButton } = Astro.props;
         {text}
     </p>
     <a
-        href="http://wa.me/18622203363"
+        href={link}
         class="text-[#ede6ce] rounded-lg px-5 w-fit h-[52px] shadow-lg bg-[#204035] flex items-center phone:self-center tablet-sm:self-start font-light justify-center gap-3 z-20"
         >{textButton}
         <slot />
