@@ -19,14 +19,11 @@
     --breakpoint-tablet: 50rem;
     --breakpoint-laptop-sm: 70rem;
     --breakpoint-laptop-lg: 90rem;
-    /* --breakpoint-phone-lg:30rem;
-    --breakpoint-desktop: 70rem; */
-
     --items-grid-cols-phone: 100%;
     --items-grid-cols-tablet: repeat(2, 300px);
     --items-grid-cols-laptop-sm: repeat(3, 300px);
     --items-grid-cols-laptop-lg: repeat(4, 300px);
-
+    --items-grid-rows-phone: auto fit-content;
 
     --font-heavy: "F8 Heavy";
 
@@ -104,12 +101,12 @@ html {
 div{
     scroll-behavior: smooth;
 }
-p.hero {
+.hero {
     font-family: 'F8 Heavy';
 
 }
 
-p.titlep {
+.titlep {
     font-family: "Playfair Display", serif;
 }
 
