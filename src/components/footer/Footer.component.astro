@@ -1,24 +1,50 @@
 ---
 import { FacebookIcon, InstagramIcon, TiktokIcon } from "../icons.components";
 import LogoImg from "./LogoImg.component";
-
-
 ---
 
-<footer class=" bg-[#203f34] w-full h-fit flex flex-col items-center gap-30 text-[#f1d29a]" >
+<footer
+    class="bg-[#203f34] w-full h-fit flex flex-col items-center gap-30 text-[#f1d29a]"
+>
     <div class="flex flex-col items-center gap-3 phone:w-5/6 tablet:w-6/6">
-       <p id="typing-p" class="hero text-[#f1d29a] text-8xl w-full max-w-[1000px] text-center pt-4">We love to do what we do</p>
+        <p
+            id="typing-p"
+            class="hero text-[#f1d29a] text-8xl w-full max-w-[1000px] text-center pt-4"
+        >
+            We love to do what we do
+        </p>
     </div>
-    <div class="grid grid-cols-2 place-content-center ">
-        <div class="flex items-start justify-center gap-12 w-full h-[100px] laptop-sm:h-[300px]">
+    <div class="grid grid-cols-2 place-content-center">
+        <div
+            class="flex items-start justify-center gap-12 w-full h-[100px] laptop-sm:h-[300px]"
+        >
             <ul class="w-fit flex flex-col items-center gap-3">
-                <li class="font-bold w-32 h-10  flex justify-center items-center border-b-[1px] border-blacked/40">ABOUT</li>
+                <li
+                    class="font-bold w-32 h-10 flex justify-center items-center border-b-[1px] border-blacked/40"
+                >
+                    ABOUT
+                </li>
                 <li class="font-light"><a href="/story">Our story</a></li>
                 <li class="font-light"><a href="/story">Contact us</a></li>
-                <li class="font-light flex">
-                    <InstagramIcon />
-                    <FacebookIcon />
-                    <TiktokIcon />
+                <li class="font-light flex gap-4">
+                    <a
+                        href="https://www.instagram.com/divinagracianj/"
+                        class="text-[#ede6ce] rounded-lg w-fit h-[52px] tablet:shadow-lg bg-[#204035] place-self-end self-center flex items-center font-light justify-center gap-3 z-20"
+                    >
+                        <InstagramIcon />
+                    </a>
+                    <a
+                        href="https://www.facebook.com/profile.php?id=61558654927519"
+                        class="text-[#ede6ce] rounded-lg w-fit h-[52px] tablet:shadow-lg bg-[#204035] place-self-end self-center flex items-center font-light justify-center gap-3 z-20"
+                    >
+                        <FacebookIcon />
+                    </a>
+                    <a
+                        href="https://www.tiktok.com/@divinagracianj"
+                        class="text-[#ede6ce] rounded-lg w-fit h-[52px] tablet:shadow-lg bg-[#204035] place-self-end self-center flex items-center font-light justify-center gap-3 z-20"
+                    >
+                        <TiktokIcon />
+                    </a>
                 </li>
             </ul>
             <!-- <ul class="w-fit flex flex-col items-center gap-3">
@@ -26,16 +52,17 @@ import LogoImg from "./LogoImg.component";
                 <li>CONTACT</li>
             </ul> -->
         </div>
-        <div class="w-full flex flex-col items-center ">
-            <p  class="titlep text-2xl laptop-sm:w-200 pl-1">We believe in real food. That means: <br>
-    •    No high fructose corn syrup <br>
-    •    No preservatives <br>
-    •    No artificial chemicals
-</p>
+        <div class="w-full flex flex-col items-center">
+            <p class="titlep text-2xl laptop-sm:w-200 pl-1">
+                We believe in real food. That means: <br />
+                    •    No high fructose corn syrup <br />
+                    •    No preservatives <br />
+                    •    No artificial chemicals
+            </p>
             <!-- <LogoImg client:visible className="w-[100px] h-[100px]" id="logoxl" alt="Logo Divina Gracia" source="" /> -->
         </div>
     </div>
-    <div class=" font-light w-full p-5 text-center">
+    <div class="font-light w-full p-5 text-center">
         <p>330 S Salem St, Dover, NJ 07801 - 9736060887</p>
     </div>
 </footer>
