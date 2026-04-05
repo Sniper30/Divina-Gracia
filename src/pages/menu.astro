@@ -3,24 +3,11 @@ import Footer from "../components/footer/Footer.component.astro";
 import NavMenu from "../components/menu/NavMenu.component.astro";
 import Layout from "../layouts/Layout.astro";
 import MenuComponent from "../components/menu/Menu.component.astro";
-
-import TextWithButton from "../components/TextWithButton.component.astro";
-import { WhatsappIcon } from "../components/icons.components";
-import PagesHeader from "../components/PagesHeader.component.astro";
 ---
 
 <Layout>
     <main class="w-full h-fit phone:px-1 tablet:px-14 relative">
-        <PagesHeader>
-                 <TextWithButton
-                    classes="laptop-sm:inset-20 justify-center h-[400px]"
-                    title="Our Menu"
-                    text="Explore our full menu and discover all the delicious options we have for you. If you have any questions or need help choosing, we’re here for you. Feel free to contact us anytime!"
-                    textButton="Order now"
-                >
-                    <WhatsappIcon />
-                </TextWithButton>
-        </PagesHeader>
+
         <MenuComponent delay={0}>
             <NavMenu />
         </MenuComponent>
